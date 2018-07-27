@@ -52,7 +52,7 @@ input[type="radio"], input[type="checkbox"] 	{ position: relative; top: 0.25em;}
 
 /* TABLES */
 table 			{ border-collapse: collapse; }
-tr:nth-child(even) 	{ background: #242a38;}
+tr:nth-child(even) 	{ background: rgba(0 ,0 ,0 , 0.1);}
 
 /* HAIRLINE & PROGRESS BAR */
 hr 	{ margin-bottom: 1.5em; margin-top: 0; border: 0.063em solid; }
@@ -117,7 +117,7 @@ textarea:focus, input[type="text"]:focus {
 @media(max-width:650px) {
 	html 		{ font-size: 100%; }
 	.row > div	{ width: 90%; margin-right: 0; padding: 5%; }
-	
+
 	button, input[type="submit"] 	{ width: 100%; margin-right: 0; }
 	table, tr, td, th 		{ padding-left: 0;}
 
