@@ -7,23 +7,23 @@ fieldset, form, label, legend, caption, article, aside, canvas, details,
 embed, figure, figcaption, footer, header, hgroup,
 menu, nav, output, ruby, section, summary,
 time, mark, audio, video, button, input, textarea {
-	font-size: 		100%;
+	font-size: 	100%;
 	line-height: 	1.625em;
 	text-align: 	left;
 	vertical-align: baseline;
-	margin: 		0;
-	padding: 		0;
-	border: 		0;
+	margin: 	0;
+	padding: 	0;
+	border: 	0;
 	border-radius: 	0.25em;
 }
 body, .article {
 	font-family: 	Helvetica, Arial, "Lucida Grande", sans-serif;
 	font-weight: 	300;
-	font-size: 		100%;
+	font-size: 	100%;
 	line-height: 	1.625em;
 	-moz-osx-font-smoothing: 	grayscale;
 	-webkit-font-smoothing: 	antialiased;
-	font-smoothing: 			antialiased;
+	font-smoothing: 		antialiased;
 }
 input, button, label, textarea, small, b, a, i { display: inline-block; }
 
@@ -32,30 +32,30 @@ h1, .h1 		{ font-size: 3.5625em;	line-height: 1.36842105em;  margin: 0.9122807em
 h2, .h2 		{ font-size: 2.625em;  	line-height: 1.23809524em;  margin: 0.61904762em 0; }
 h3, .h3 		{ font-size: 1.375em;	line-height: 1.18181818em;  margin: 1.18181818em 0; }
 
-p, h4, h5, h6 	{ font-size: 1em;  		line-height: 1.625em; 		margin: 1.625em 0;}
+p, h4, h5, h6 	{ font-size: 1em; line-height: 1.625em; margin: 1.625em 0;}
 small,
 .small, label 	{ font-size: 0.8125em; line-height: 2em; padding-top: 0em; padding-bottom: 0em; margin: 0;}
 
-p, td, label, li 		{ opacity: 		0.75; }
-label 					{ padding-top: 	2em;}
-b 						{ font-weight: 	700; }
-i 						{ font-style: 	italic; }
-li 						{ list-style: 	disc;}
-a						{ color: 		#5471e7; }
+p, td, label, li 	{ opacity: 	0.75; }
+label 			{ padding-top: 	2em;}
+b 			{ font-weight: 	700; }
+i 			{ font-style: 	italic; }
+li 			{ list-style: 	disc;}
+a			{ color: 	#5471e7; }
 
 /* FORMS */
 button, .button, textarea, li, th, tr, td,
 input[type="text"], input[type="submit"] 	{ margin: 0.40625em 0; padding:0.40625em 1em; }
-input[type="text"], textarea 				{ width: calc(100% - 2em);}
-input[type="radio"], input[type="checkbox"] { position: relative; top: 0.25em;}
+input[type="text"], textarea 			{ width: calc(100% - 2em);}
+input[type="radio"], input[type="checkbox"] 	{ position: relative; top: 0.25em;}
 .button, button,input[type="submit"] 		{ text-align: center;}
 
 /* TABLES */
-table 				{ border-collapse: collapse; }
+table 			{ border-collapse: collapse; }
 tr:nth-child(even) 	{ background: #242a38;}
 
 /* HAIRLINE & PROGRESS BAR */
-hr 		{ margin-bottom: 1.5em; margin-top: 0; border: 0.063em solid; }
+hr 	{ margin-bottom: 1.5em; margin-top: 0; border: 0.063em solid; }
 .bar 	{ margin: -0.126em 0 0 0; border: 0.063em solid; }
 
 /* HOVER EFFECTS */
@@ -78,8 +78,8 @@ textarea:focus, input[type="text"]:focus {
 /* COLORS */
 .col-light 		{ color: #fff; }
 .col-dark 		{ color: #18202d; }
-.col-light-grey	{ color: #dbe5e4; }
-.col-dark-grey	{ color: #242a38; }
+.col-light-grey		{ color: #dbe5e4; }
+.col-dark-grey		{ color: #242a38; }
 
 .col-red 		{ color: #fe4f44; }
 .col-green 		{ color: #02cea9; }
@@ -88,8 +88,8 @@ textarea:focus, input[type="text"]:focus {
 
 .bg-light 		{ background: #fff; }
 .bg-dark 		{ background: #18202d; }
-.bg-light-grey	{ background: #dbe5e4; }
-.bg-dark-grey	{ background: #242a38; }
+.bg-light-grey		{ background: #dbe5e4; }
+.bg-dark-grey		{ background: #242a38; }
 
 .bg-red 		{ background: #fe4f44; }
 .bg-green 		{ background: #02cea9; }
@@ -105,20 +105,21 @@ textarea:focus, input[type="text"]:focus {
 .row, .full, table, img { width: 100%; }
 .row > div:last-of-type	{ margin-right: 0; }
 
-.row > .row, .one		{ width: 95%;}
-.x1-half				{ width: 42.5%; }
-.x1-third 				{ width: 25%; }
-.x1-fourth 				{ width: 16.25%; }
+.row > .row, .one	{ width: 95%;}
+.x1-half		{ width: 42.5%; }
+.x1-third 		{ width: 25%; }
+.x1-fourth 		{ width: 16.25%; }
 
 .x2-third, .x2-thirds 	{ width: 60%; }
 .x3-fourth, .x3-fourths { width: 68.75%; }
 
 /* MOBILE */
 @media(max-width:650px) {
-	html 							{ font-size: 100%; }
-	.row > div						{ width: 90%; margin-right: 0; padding: 5%; }
+	html 		{ font-size: 100%; }
+	.row > div	{ width: 90%; margin-right: 0; padding: 5%; }
+	
 	button, input[type="submit"] 	{ width: 100%; margin-right: 0; }
-	table, tr, td, th 				{ padding-left: 0;}
+	table, tr, td, th 		{ padding-left: 0;}
 
 	h1 { font-size: 3.25em;}
 	h2 { font-size: 2.640625em ;}
