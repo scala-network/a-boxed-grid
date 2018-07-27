@@ -28,7 +28,6 @@ body, .article {
 input, button, label, textarea, small, b, a, i { display: inline-block; }
 
 /* TYPOGRAPHY */
-
 h1, .h1 		{ font-size: 3.5625em;	line-height: 1.36842105em;  margin: 0.9122807em 0; }
 h2, .h2 		{ font-size: 2.625em;  	line-height: 1.23809524em;  margin: 0.61904762em 0; }
 h3, .h3 		{ font-size: 1.375em;	line-height: 1.18181818em;  margin: 1.18181818em 0; }
@@ -60,25 +59,23 @@ hr 		{ margin-bottom: 1.5em; margin-top: 0; border: 0.063em solid; }
 .bar 	{ margin: -0.126em 0 0 0; border: 0.063em solid; }
 
 /* HOVER EFFECTS */
-
 button, input, a, textarea, .hover 	{ opacity: 0.9;}
 button:hover, input:hover,
 a:hover, textarea:hover, .hover		{ opacity: 1;}
 
 textarea:hover, input[type="text"]:hover {
-	-webkit-box-shadow: inset 0px 0px 0px 1px rgba(84,113,231,1);
-	-moz-box-shadow: 	inset 0px 0px 0px 1px rgba(84,113,231,1);
-	box-shadow: 		inset 0px 0px 0px 1px rgba(84,113,231,1);
+	-webkit-box-shadow: inset 0 0 0 1px rgba(84,113,231,1);
+	-moz-box-shadow: 	inset 0 0 0 1px rgba(84,113,231,1);
+	box-shadow: 		inset 0 0 0 1px rgba(84,113,231,1);
 }
 
 textarea:focus, input[type="text"]:focus {
-	-webkit-box-shadow: inset 0px 0px 0px 2px rgba(84,113,231,1);
-	-moz-box-shadow: 	inset 0px 0px 0px 2px rgba(84,113,231,1);
-	box-shadow: 		inset 0px 0px 0px 2px rgba(84,113,231,1);
+	-webkit-box-shadow: inset 0 0 0 2px rgba(84,113,231,1);
+	-moz-box-shadow: 	inset 0 0 0 2px rgba(84,113,231,1);
+	box-shadow: 		inset 0 0 0 2px rgba(84,113,231,1);
 }
 
 /* COLORS */
-
 .col-light 		{ color: #fff; }
 .col-dark 		{ color: #18202d; }
 .col-light-grey	{ color: #dbe5e4; }
