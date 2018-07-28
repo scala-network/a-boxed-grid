@@ -42,6 +42,7 @@ footer, header, hgroup, menu, nav, section, textarea {
 input, p, li, tr, th, td { margin-bottom: 0.8125em; padding-top: 0.40625em; padding-bottom: 0.40625em; }
 .small, small, label { display: inline-block; font-size: 0.75em; line-height: 2em; margin-top: 1.250em;}
 table, tr, td, th 			{ border-collapse: collapse; }
+tr:nth-child(even) 	{ background: rgba(0 ,0 ,0 , 0.1);}
 
 input[type="radio"], input[type="checkbox"] { margin: 0; top: 0.25em;}
 
