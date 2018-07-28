@@ -143,3 +143,11 @@ textarea:focus, input[type="text"]:focus {
 .right 	{ float: right; }
 .center { text-align: center;}
 .center > div, .right > div { clear: both; display: inline-block; float: none;}
+
+/* REMOVING DOTTED OUTLINES */
+input::-moz-focus-inner, input::-moz-focus-outer { border: none; }
+input:focus { outline: none; }
+button::-moz-focus-inner, input::-moz-focus-outer { border: none; }
+button:focus { outline: none; }
+textarea::-moz-focus-inner, input::-moz-focus-outer { border: none; }
+textarea:focus { outline: none; }
