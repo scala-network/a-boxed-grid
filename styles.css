@@ -128,7 +128,7 @@ textarea:focus, input[type="text"]:focus {
 .bg-yellow 		{ background: #fef045; }
 
 /* GRID */
-.container 	{ height: 20000px; max-width: 1024px; margin: auto; padding: 1em; }
+.container 	{ max-width: 1024px; margin: auto; padding: 1em; }
 
 .row, .full-width, table, img 	{ width: 100%;}
 .row > .col:last-of-type	{ margin-right: 0; }
