@@ -11,7 +11,6 @@ time, mark, audio, video, button, input, textarea {
 	line-height: 	1.625em;
 	text-align: 	left;
 	vertical-align: baseline;
-	font: inherit;
 	margin: 		0;
 	padding: 		0;
 	border: 		0;
@@ -42,7 +41,7 @@ footer, header, hgroup, menu, nav, section, textarea {
 }
 
 /* MAIN PADDINGS & MARGINS */
-input, button, p, li, tr, th, td, textarea {
+input, button, p, li, tr, th, td, textarea, header {
 	margin-bottom: 0.81250em;
 	padding: 0.40625em 0 ;
 }
@@ -50,14 +49,16 @@ small, .small, label {
 	display: inline-block;
 	font-size: 0.75em;
 	line-height: 2.167em;
-	margin: 0.542em 0;
-	padding: 0;
+	margin-top: 0.542em;
+	margin-bottom: 0.542em;
+	padding-top: 0;
+	padding-bottom: 0;
 }
 
 /* TYPOGRAPHY */
-h1, .h1 		{ font-size: 3.5625em;	line-height: 1.36842105em;  margin-top: 0.91228070em; margin-bottom: 0; }
-h2, .h2 		{ font-size: 2.625em;  	line-height: 1.23809524em;  margin-top: 1.23809524em; margin-bottom: 0; }
-h3, .h3 		{ font-size: 1.375em;	line-height: 1.18181818em;  margin: 0.59090909em 0; }
+h1, .h1 		{ font-size: 3.5625em;	line-height: 1.36842105em;  margin-top: 0.91228070em; margin-bottom: 0; padding: 0; }
+h2, .h2 		{ font-size: 2.625em;  	line-height: 1.23809524em;  margin-top: 1.23809524em; margin-bottom: 0; padding: 0; }
+h3, .h3 		{ font-size: 1.375em;	line-height: 1.18181818em;  margin-top: 1.18181818em; margin-bottom: 0; padding: 0; }
 h4, h5, h6, p	{ font-size: 1em; 		line-height: 1.625em; 		margin: 0.8125em 0;}
 
 a { color: #5471e7; cursor: pointer;}
@@ -65,6 +66,7 @@ b { font-weight: 700;}
 i { font-style: italic;}
 s { text-decoration: line-through; }
 u { text-decoration: underline; }
+span { font-weight: normal;}
 
 p, label, small, td, li { opacity: 0.75;}
 
@@ -73,7 +75,6 @@ tr:nth-child(even) 	{ background: rgba(0 ,0 ,0 , 0.25);}
 
 li, td, th { list-style: disc; margin-left: 1em; padding-left: 1em;}
 
-.fas, .fab { margin-right: 0.5em;}
 /* FORMS */
 .button, button, input[type="text"],
 input[type="submit"], textarea { padding-left: 1em; padding-right: 1em;}
@@ -82,7 +83,7 @@ input[type="radio"], input[type="checkbox"] { position: relative; margin: 0; top
 
 
 /* HAIRLINE & PROGRESS BAR */
-hr 	{ margin: 0.750em 0; border: 1px solid; }
+hr 	{ margin: 1em 0; border: 1px solid; }
 .bar { margin-bottom: 0; float: left; margin-top: -0.25em;}
 
 /* HOVER EFFECTS */
@@ -127,13 +128,13 @@ textarea:focus, input[type="text"]:focus {
 .bg-yellow 		{ background: #fef045; }
 
 /* GRID */
-.container 	{ max-width: 1024px; margin: auto; padding: 1em; }
+.container 	{ height: 20000px; max-width: 1024px; margin: auto; padding: 1em; }
 
 .row, .full-width, table, img 	{ width: 100%;}
 .row > .col:last-of-type	{ margin-right: 0; }
 .row:after 	{ content: ""; display: table; clear: both; }
 
-.col { float: left; width: 94%; margin-right: 5%; padding: 0.813em 3%; margin-bottom: 0.813em; margin-top: 0.813em; }
+.col { float: left; width: 94%; margin-right: 5%; padding: 0.813em 3% 0 3%; margin-bottom: 0.813em; margin-top: 0.813em; }
 
 .boxed 	{ width: 90%; margin-right: 0; padding: 0 5%; }
 
@@ -147,7 +148,7 @@ textarea:focus, input[type="text"]:focus {
 /* MOBILE */
 @media(max-width:650px) {
 	html 		{ font-size: 100%; }
-	.col	{ width: 90%; margin-right: 0; padding: 5%; }
+	.col	{ width: 90%; margin: 0.3em 0; padding: 0 5%; }
 
 	button, .button, input[type="submit"] 	{ width: 100%; margin-right: 0; }
 	table, tr, td, th 						{ padding-left: 0;}
@@ -161,9 +162,11 @@ textarea:focus, input[type="text"]:focus {
 
 /* HELPER */
 .right 	{ float: right; }
+.t-right { text-align: right;}
 .center { text-align: center;}
 .center > div, .right > div { clear: both; display: inline-block; float: none;}
-
+.no-fit { width: auto;}
+.block { margin-top: 5em;}
 /* FIXES */
 
 /* REMOVING DOTTED OUTLINES */
