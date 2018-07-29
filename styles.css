@@ -7,19 +7,20 @@ fieldset, form, label, legend, caption, article, aside, canvas, details,
 embed, figure, figcaption, footer, header, hgroup,
 menu, nav, output, ruby, section, summary,
 time, mark, audio, video, button, input, textarea {
-	font-size: 	100%;
+	font-size: 		100%;
 	line-height: 	1.625em;
 	text-align: 	left;
 	vertical-align: baseline;
-	margin: 0;
-	padding: 0;
-	border: 	0;
-	border-radius: 	0.25em;
-	/* SHOW BOXES
+	font: inherit;
+	margin: 		0;
+	padding: 		0;
+	border: 		0;
+	border-radius: 	0.3em;
+/* SHOW BOXES
 	-webkit-box-shadow: inset 0 0 0 1px rgba(84,113,231,1);
 	-moz-box-shadow: 	inset 0 0 0 1px rgba(84,113,231,1);
 	box-shadow: 		inset 0 0 0 1px rgba(84,113,231,1);
-	*/
+*/
 }
 
 body, .article {
@@ -27,9 +28,11 @@ body, .article {
 	font-weight: 	300;
 	font-size: 		100%;
 	line-height: 	1.625em;
+	color: #7a91b6;
+
 	-moz-osx-font-smoothing: 	grayscale;
 	-webkit-font-smoothing: 	antialiased;
-	font-smoothing: 		antialiased;
+	font-smoothing: 			antialiased;
 }
 
 /* HTML5 display-role reset for older browsers */
@@ -38,35 +41,49 @@ footer, header, hgroup, menu, nav, section, textarea {
 	display: block;
 }
 
-/* PADDINGS & MARGINS */
-input, p, li, tr, th, td { margin-bottom: 0.8125em; padding-top: 0.40625em; padding-bottom: 0.40625em; }
-.small, small, label { display: inline-block; font-size: 0.75em; line-height: 2em; margin-top: 1.250em;}
-table, tr, td, th 			{ border-collapse: collapse; }
-tr:nth-child(even) 	{ background: rgba(0 ,0 ,0 , 0.1);}
-
-input[type="radio"], input[type="checkbox"] { margin: 0; top: 0.25em;}
-
-li, ol, ul { list-style: disc;}
-textarea {  margin-bottom: 1.083em; margin-top: 0;}
-
+/* MAIN PADDINGS & MARGINS */
+input, button, p, li, tr, th, td, textarea {
+	margin-bottom: 0.81250em;
+	padding: 0.40625em 0 ;
+}
+small, .small, label {
+	display: inline-block;
+	font-size: 0.75em;
+	line-height: 2.167em;
+	margin: 0.542em 0;
+	padding: 0;
+}
 
 /* TYPOGRAPHY */
-h1, .h1 		{ font-size: 3.5625em;	line-height: 1.36842105em;  margin: 0.45614035em 0; }
-h2, .h2 		{ font-size: 2.625em;  	line-height: 1.23809524em;  margin: 0.61904762em 0; }
+h1, .h1 		{ font-size: 3.5625em;	line-height: 1.36842105em;  margin-top: 0.91228070em; margin-bottom: 0; }
+h2, .h2 		{ font-size: 2.625em;  	line-height: 1.23809524em;  margin-top: 1.23809524em; margin-bottom: 0; }
 h3, .h3 		{ font-size: 1.375em;	line-height: 1.18181818em;  margin: 0.59090909em 0; }
-h4, h5, h6 		{ margin: 0.8125em 0; line-height: 1.625em;}
-p, td, label, li 	{ opacity: 		0.75; }
+h4, h5, h6, p	{ font-size: 1em; 		line-height: 1.625em; 		margin: 0.8125em 0;}
 
+a { color: #5471e7; cursor: pointer;}
+b { font-weight: 700;}
+i { font-style: italic;}
+s { text-decoration: line-through; }
+u { text-decoration: underline; }
 
+p, label, small, td, li { opacity: 0.75;}
 
+table, tr, td, th 	{ border-collapse: collapse; }
+tr:nth-child(even) 	{ background: rgba(0 ,0 ,0 , 0.25);}
+
+li, td, th { list-style: disc; margin-left: 1em; padding-left: 1em;}
+
+.fas, .fab { margin-right: 0.5em;}
 /* FORMS */
-.button, button, input[type="text"],input[type="submit"], textarea
-{ padding-left: 1em; padding-right: 1em;}
+.button, button, input[type="text"],
+input[type="submit"], textarea { padding-left: 1em; padding-right: 1em;}
 input[type="text"], textarea { width: calc(100% - 2em);}
+input[type="radio"], input[type="checkbox"] { position: relative; margin: 0; top: 0.25em;}
+
 
 /* HAIRLINE & PROGRESS BAR */
-hr 	{ margin-bottom: 0; margin-top: -0.25em; border: 0.125em solid; }
-.bar { margin-bottom: 0; float: left;}
+hr 	{ margin: 0.750em 0; border: 1px solid; }
+.bar { margin-bottom: 0; float: left; margin-top: -0.25em;}
 
 /* HOVER EFFECTS */
 button, input, a, textarea, .hover 		{ opacity: 0.9;}
@@ -87,12 +104,14 @@ textarea:focus, input[type="text"]:focus {
 }
 
 /* COLORS */
+
 .c-white 		{ color: #fff; }
+.c-grey			{ color: #7a91b6; }
 .c-black 		{ color: #18202d; }
 .c-lighter		{ color: rgba(255, 255, 255, 0.1); }
-.c-darker		{ color: rgba(0, 0, 0, 0.1); }
+.c-darker		{ color: rgba(0, 0, 0, 0.2); }
 
-.c-red 		{ color: #fe4f44; }
+.c-red 			{ color: #fe4f44; }
 .c-green 		{ color: #02cea9; }
 .c-blue 		{ color: #5471e7; }
 .c-yellow		{ color: #fef045; }
@@ -100,7 +119,7 @@ textarea:focus, input[type="text"]:focus {
 .bg-white 		{ background: #fff; }
 .bg-black 		{ background: #18202d; }
 .bg-lighter		{ background: rgba(255, 255, 255, 0.1); }
-.bg-darker		{ background: rgba(0, 0, 0, 0.1); }
+.bg-darker		{ background: rgba(0, 0, 0, 0.2); }
 
 .bg-red 		{ background: #fe4f44; }
 .bg-green 		{ background: #02cea9; }
@@ -108,26 +127,27 @@ textarea:focus, input[type="text"]:focus {
 .bg-yellow 		{ background: #fef045; }
 
 /* GRID */
-.container 	{ max-width: 1024px; margin: auto; padding: 2.5% }
+.container 	{ max-width: 1024px; margin: auto; padding: 1em; }
 
-.row > div	{ float: left; margin-right: 5%; padding: 1.625em 2.5%; margin-bottom: 1.625em;}
+.row, .full-width, table, img 	{ width: 100%;}
+.row > .col:last-of-type	{ margin-right: 0; }
 .row:after 	{ content: ""; display: table; clear: both; }
 
-.row, .full, table, img { width: 100%; }
-.row > div:last-of-type	{ margin-right: 0; }
+.col { float: left; width: 94%; margin-right: 5%; padding: 0.813em 3%; margin-bottom: 0.813em; margin-top: 0.813em; }
 
-.row > .row, .one	{ width: 95%;}
-.x1-half		{ width: 42.5%; }
-.x1-third 		{ width: 25%; }
-.x1-fourth 		{ width: 16.25%; }
+.boxed 	{ width: 90%; margin-right: 0; padding: 0 5%; }
 
-.x2-third, .x2-thirds 	{ width: 60%; }
-.x3-fourth, .x3-fourths { width: 68.75%; }
+.x1-half		{ width: 41.5%; }
+.x1-third 		{ width: 24%; }
+.x1-fourth 		{ width: 15.25%; }
+
+.x2-third, .x2-thirds 	{ width: 59%; }
+.x3-fourth, .x3-fourths { width: 67.75%; }
 
 /* MOBILE */
 @media(max-width:650px) {
 	html 		{ font-size: 100%; }
-	.row > div	{ width: 90%; margin-right: 0; padding: 5%; }
+	.col	{ width: 90%; margin-right: 0; padding: 5%; }
 
 	button, .button, input[type="submit"] 	{ width: 100%; margin-right: 0; }
 	table, tr, td, th 						{ padding-left: 0;}
@@ -143,6 +163,8 @@ textarea:focus, input[type="text"]:focus {
 .right 	{ float: right; }
 .center { text-align: center;}
 .center > div, .right > div { clear: both; display: inline-block; float: none;}
+
+/* FIXES */
 
 /* REMOVING DOTTED OUTLINES */
 input::-moz-focus-inner, input::-moz-focus-outer { border: none; }
