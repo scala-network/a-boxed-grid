@@ -18,7 +18,7 @@ time, mark, audio, video, button, input, textarea {
 
 	border: 0;
 	border-radius: 0.3em;
-/*
+/* SHOW BOXES
 	-webkit-box-shadow: inset 0 0 0 1px rgba(84,113,231,1);
 	-moz-box-shadow: inset 0 0 0 1px rgba(84,113,231,1);
 	box-shadow: inset 0 0 0 1px rgba(84,113,231,1);
@@ -109,7 +109,6 @@ textarea:focus, input[type="text"]:focus {
 }
 
 /* COLORS */
-
 .c-white { color: #fff; }
 .c-grey { color: #7a91b6; }
 .c-black { color: #18202d; }
