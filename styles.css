@@ -17,25 +17,27 @@ time, mark, audio, video, button, input, textarea {
 	padding: 0.5em 0;
 
 	border: 0;
-	border-radius: 0.3em;
-/* SHOW BOXES
+	border-radius: 0.25em;
+/*
 	-webkit-box-shadow: inset 0 0 0 1px rgba(84,113,231,1);
 	-moz-box-shadow: inset 0 0 0 1px rgba(84,113,231,1);
-	box-shadow: inset 0 0 0 1px rgba(84,113,231,1);
-*/
+	box-shadow: inset 0 0 0 1px rgba(84,113,231,1); */
+
 }
 
 body, .article {
 	font-family: Helvetica, Arial, "Lucida Grande", sans-serif;
-	font-weight: 300;
 	font-size: 100%;
 	line-height: 1.5em;
+	font-weight: 300;
 	color: #7a91b6;
 
 	-moz-osx-font-smoothing: grayscale;
 	-webkit-font-smoothing: antialiased;
 	font-smoothing: antialiased;
 }
+
+img { border-radius: 0px;}
 
 /* HTML5 display-role reset for older browsers */
 article, aside, details, figcaption, figure,
@@ -44,40 +46,41 @@ footer, header, hgroup, menu, nav, section {
 }
 
 /* RESET PADDINGS OF TYPO ELEMENTS */
-a, b, i, s, u, small, span, .fas, .fab {
+a, b, i, s, u, small, span, article, section, .fas, .fab {
 	margin: 0;
 	padding: 0;
-	display: inline-block; /* Don't like this */
 }
 
 /* TYPOGRAPHY */
 h1, h2, h3, h4, h5, h6 { margin-bottom: 0; padding: 0; }
 
-h1, .h1 { line-height: 1.200em; font-size: 2.5em; margin-top: 1em; }
-h2, .h2 { line-height: 1.250em;	font-size: 2em; margin-top:	1em; }
-h3, .h3 { line-height: 1.333em;	font-size: 1.500em;	margin-top: 0.667em; }
+h1, .h1 { font-size: 2.5em; line-height: 1.200em; margin-top: 1em; }
+h2, .h2 { font-size: 2em; line-height: 1.250em;	margin-top:	1em; }
+h3, .h3 { font-size: 1.500em; line-height: 1.333em;	margin-top: 0.667em; }
 
 .small, small, label {
-	line-height: 1.333em;
 	font-size: 0.750em;
+	line-height: 1.333em;
 	margin-top: 0.667em;
 	margin-bottom: 0.667em;
 	padding-top: 0.333em;
 	padding-bottom: 0.333em;
 }
 
-li, th, tr, td { margin-left: 1em; padding-left: 1em;}
+li, th, tr, td { margin-left: 1em; padding-right: 1em; padding-left: 1em;}
 
 a { color: #5471e7; cursor: pointer;}
 b { font-weight: 700;}
 i { font-style: italic;}
 s { text-decoration: line-through; }
 u { text-decoration: underline; }
-span { font-weight: normal;}
+span { font-weight: normal; }
 
 p, label, small, td, li { opacity: 0.75;}
 
+
 table, tr, td, th { border-collapse: collapse; }
+th { font-weight: bold;}
 tr:nth-child(even) { background: rgba(0 ,0 ,0 , 0.25);}
 
 /* FORMS */
@@ -87,7 +90,7 @@ input[type="text"], textarea { width: calc(100% - 2em);}
 input[type="radio"], input[type="checkbox"] { position: relative; margin: 0; top: 0.25em;}
 
 /* HAIRLINE & PROGRESS BAR */
-hr 	{ margin: 0.938em 0; border: 0.062em solid; }
+hr 	{ margin: 0.938em 0; border: 0.062em solid; color: #777; }
 .bar { margin: -2px 0 0 0; border: 1px solid; float: left; }
 
 /* HOVER EFFECTS */
@@ -110,10 +113,9 @@ textarea:focus, input[type="text"]:focus {
 
 /* COLORS */
 .c-white { color: #fff; }
-.c-grey { color: #7a91b6; }
 .c-black { color: #18202d; }
-.c-lighter { color: rgba(255, 255, 255, 0.1); }
-.c-darker { color: rgba(0, 0, 0, 0.2); }
+.c-lighter { color: #e8e8e8; }
+.c-darker { color: #11171f; }
 
 .c-red { color: #fe4f44; }
 .c-green { color: #02cea9; }
@@ -122,8 +124,8 @@ textarea:focus, input[type="text"]:focus {
 
 .bg-white { background: #fff; }
 .bg-black { background: #18202d; }
-.bg-lighter { background: rgba(255, 255, 255, 0.1); }
-.bg-darker { background: rgba(0, 0, 0, 0.2); }
+.bg-lighter { background: #e8e8e8; }
+.bg-darker { background: #11171f; }
 
 .bg-red { background: #fe4f44; }
 .bg-green { background: #02cea9; }
@@ -157,14 +159,18 @@ textarea:focus, input[type="text"]:focus {
 	button, .button, input[type="submit"] { width: 100%; margin-right: 0; }
 	table, tr, td, th { padding-left: 0;}
 	small, .small { width: auto;}
+	table.small { width: 100%;}
 }
 
 /* HELPER */
+.center > div { float: none; margin: 0 auto;}
 .right 	{ float: right; }
 .t-right { text-align: right;}
 
-.center > div { float: none; margin: 0 auto;}
-.no-fit { width: auto;}
+.boxed { padding: 1em; }
+
+
+
 
 /* FIXES */
 
